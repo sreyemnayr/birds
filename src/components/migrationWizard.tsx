@@ -56,9 +56,9 @@ export function MigrationWizard({ children }: PropsWithChildren) {
     }
   }, [linkData])
 
-  const currentStepLi = "flex items-center text-blue-600 dark:text-blue-500 space-x-2.5"
-  const completedStepLi = "flex items-center text-green-600 dark:text-green-500 space-x-2.5"
-  const futureStepLi = "flex items-center text-gray-500 dark:text-gray-400 space-x-2.5"
+  const currentStepLi = "flex items-center text-blue-600 dark:text-blue-500 space-x-2.5 cursor-pointer"
+  const completedStepLi = "flex items-center text-green-600 dark:text-green-500 space-x-2.5 cursor-pointer"
+  const futureStepLi = "flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 cursor-not-allowed"
 
   const currentStepSpan = "flex items-center justify-center w-8 h-8 border border-blue-600 rounded-full shrink-0 dark:border-blue-500"
   const completedStepSpan = "flex items-center justify-center w-8 h-8 border border-green-600 rounded-full shrink-0 dark:border-green-500"
@@ -134,6 +134,14 @@ export function MigrationWizard({ children }: PropsWithChildren) {
             <h1>Connect Your Solana Wallet</h1>
             <div className="flex align-center justify-around">
             <WalletMultiButton />
+            {publicKey && (
+            <button 
+                  onClick={()=>{
+                    setStep(!publicKey ? 1 : !eAddress ? 2 : !messageVerified ? 3 : 4 )
+                  }}
+                  className="inline-block rounded-full bg-emerald-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#14a44d] transition duration-150 ease-in-out hover:bg-success-600 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:bg-success-600 focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:outline-none focus:ring-0 active:bg-success-700 active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(20,164,77,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)]"
+                  >Next</button>
+            )}
             </div>
           </div>
         )
@@ -144,6 +152,14 @@ export function MigrationWizard({ children }: PropsWithChildren) {
           <h1>Connect Your Ethereum Wallet</h1>
           <div className="flex align-center justify-around">
           <Web3Button />
+          {eAddress && (
+            <button 
+                  onClick={()=>{
+                    setStep(!publicKey ? 1 : !eAddress ? 2 : !messageVerified ? 3 : 4 )
+                  }}
+                  className="inline-block rounded-full bg-emerald-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#14a44d] transition duration-150 ease-in-out hover:bg-success-600 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:bg-success-600 focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:outline-none focus:ring-0 active:bg-success-700 active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(20,164,77,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)]"
+                  >Next</button>
+            )}
           </div>
           </div>
         )
@@ -189,6 +205,15 @@ export function MigrationWizard({ children }: PropsWithChildren) {
               </div>
             )
           }
+
+          {messageVerified && (
+            <button 
+                  onClick={()=>{
+                    setStep(!publicKey ? 1 : !eAddress ? 2 : !messageVerified ? 3 : 4 )
+                  }}
+                  className="inline-block rounded-full bg-emerald-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#14a44d] transition duration-150 ease-in-out hover:bg-success-600 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:bg-success-600 focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:outline-none focus:ring-0 active:bg-success-700 active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(20,164,77,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)]"
+                  >Next</button>
+            )}
           
           </div>
         )
