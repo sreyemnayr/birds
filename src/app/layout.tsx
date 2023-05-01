@@ -1,4 +1,9 @@
-import './globals.css'
+
+import { ClientProviders } from '@/lib/clientProviders'
+
+require('@solana/wallet-adapter-react-ui/styles.css')
+require('./globals.css')
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClientProviders>
+          {children}
+        </ClientProviders>
+      </body>
     </html>
   )
 }
