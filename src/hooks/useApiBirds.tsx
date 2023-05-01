@@ -2,7 +2,7 @@
 
 import useSWR from 'swr'
 
-const fetcher = (sAddress: string) => fetch(`/api/birds/${sAddress}`, {
+const fetcher = (key: string) => fetch(key, {
   "headers": {
     "accept": "*/*",
   },
@@ -13,7 +13,7 @@ export function useApiBirds(sAddress: string) {
   console.log("In useApiBirds")
   console.log(sAddress)
   
-  const { data, error, isLoading, mutate } = useSWR(sAddress !== "" ? sAddress : null, fetcher)
+  const { data, error, isLoading, mutate } = useSWR(sAddress !== "" ? `/api/birds/${sAddress}` : null, fetcher)
   if(data?.result){
     console.log("in if data result")
     console.log(data.result)
