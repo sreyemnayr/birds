@@ -1,0 +1,36 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Cygnus Buccinator Morphor #15",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Swan"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Auriga"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Cygnus"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Moire Ribbon"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Circe"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Solar Flair"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Buccinator"
+    }
+  ],
+  "image": "ipfs://bafybeif4iadcw36ycgyr5pkhv4girfyfimf4nk77pjqqjrqj4iysxnxc7u"
+}

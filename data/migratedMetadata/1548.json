@@ -1,0 +1,24 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Empidonax Virescens Morphens #55",
+  "attributes": [
+    {
+      "trait_type": "Celestial",
+      "value": "Merope"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Empidonax"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Luster"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Virescens"
+    }
+  ],
+  "image": "ipfs://bafybeihellmzyplqfect5wl6hisoo43hnqiwu7my7wzyympqayz7w5mrmy"
+}

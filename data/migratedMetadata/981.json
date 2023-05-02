@@ -1,0 +1,36 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Ardea Herodias Morpias #49",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Flamingo"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Regulus"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Ardea"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Mimosa"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Needle Heel"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Morning Mist"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Herodias"
+    }
+  ],
+  "image": "ipfs://bafybeifkznklj23u3hzixblkubsneivu4mc5bf4d4wvzlml3caccjq2jei"
+}

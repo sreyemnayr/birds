@@ -1,0 +1,36 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Egretta Tricolor Morpha #2",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Raven"
+    },
+    {
+      "trait_type": "Companion",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Egretta"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Ceirean"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Winged Stiletto"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Morning Mist"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Tricolor"
+    }
+  ],
+  "image": "ipfs://bafybeidbrh5kz5p5zwkuqbickclrinjttabg7cm7k53myza46n4vwz4miq"
+}

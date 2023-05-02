@@ -1,0 +1,44 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Grus Paradisea Morphea #96",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Heron"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Polaris"
+    },
+    {
+      "trait_type": "Companion",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Grus"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Torch"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Cecaelia"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Solaris"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Painted Cloud"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Paradisea"
+    }
+  ],
+  "image": "ipfs://bafybeiac7waxnhyzvg5hemlmxgf6in3qkcq3lzdy4t62n2dphvdmgy72qq"
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Gymnogyps Californianus Morphus #68",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Crane"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Auriga"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Gymnogyps"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Black Satin"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Luster"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Californianus"
+    }
+  ],
+  "image": "ipfs://bafybeihvoq6c4eq2rlafufkyawmjwlxocqxvij2tfdpk4ciykdklpt6h7u"
+}

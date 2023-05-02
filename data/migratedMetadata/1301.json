@@ -1,0 +1,36 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Nannopterum Auritum Morphum #45",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Flamingo"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Nannopterum"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Kraken"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Solis"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Winged Stiletto"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Gathering Storm"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Auritum"
+    }
+  ],
+  "image": "ipfs://bafybeicf4j4j6zgfu446ttfzk5ntzcj25e4wffg352n3ctdzsoslwq4hgi"
+}

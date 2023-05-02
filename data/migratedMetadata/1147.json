@@ -1,0 +1,48 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Egretta Thula Morpha #42",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Magenta Crane"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Auriga"
+    },
+    {
+      "trait_type": "Companion",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Egretta"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Coral Trumpet"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Lusca"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Mira"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Winged Stiletto"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Enchanted"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Thula"
+    }
+  ],
+  "image": "ipfs://bafybeibgff7b4bs6qdgo6lbnhlew33kyxfevgrmgeb77ltgh5ix5iawu3q"
+}
