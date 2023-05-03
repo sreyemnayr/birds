@@ -14,23 +14,26 @@ export async function GET() {
     
           
           const result = await tokens.find({minted:true}).sort({mint_block:-1}).limit(1).toArray()
-          const mint_block = result[0].mint_block
+          const mint_block = result[0].mint_block as number
           
-          const res = await fetch(`https://api.etherscan.io/api?module=account&action=tokennfttx&address=0x8455c49C92c814DD293c6bE2888298E88B274007&page=0&offset=1000&startblock=${mint_block + 1}&sort=asc&apikey=M6A46XPIMK6R69D9C2M8PTAAMZ2KKDSAD7`, {next: { revalidate: 5 },}).then(r=>r.json())
+          const res = await fetch(
+            `https://api.etherscan.io/api?module=account&action=tokennfttx&address=0x8455c49C92c814DD293c6bE2888298E88B274007&page=0&offset=1000&startblock=${mint_block + 1}&sort=asc&apikey=M6A46XPIMK6R69D9C2M8PTAAMZ2KKDSAD7`,
+             {next: { revalidate: 5 }}
+            ).then(r=>r.json())
           
-          console.log(res)
+          const updates = []
 
           if(res){
             for(let tx of res.result){
-                await tokens.updateOne({token_id: parseInt(tx.tokenID)}, {$set: {minted: true, mint_tx: tx.hash, mint_block: parseInt(tx.blockNumber)}})
+                updates.push(await tokens.updateOne({token_id: parseInt(tx.tokenID)}, {$set: {minted: true, mint_tx: tx.hash, mint_block: parseInt(tx.blockNumber)}}))
             }
           }
 
-          return NextResponse.json({success: true})
+          return NextResponse.json({success: true, mint_block: mint_block, response: res, db_tx: updates})
     
           
         } catch (error) {
-          console.log(error);
+          return NextResponse.json({success: false, error})
         }
 
     
