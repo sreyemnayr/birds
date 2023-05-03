@@ -9,7 +9,7 @@ const fetcher = (key: string) => fetch(`https://public-api.solscan.io/${key}`, {
     "token": process.env.SOLSCAN_TOKEN || "",
   },
   "method": "GET",
-}).then(res => res.json()).then(j => parseInt(j?.tokenInfo?.supply || "1") == 0);
+}).then(res => res.json());
 
 const txFetcher = (key: string) => fetch(`https://public-api.solscan.io/${key}`, {
   "headers": {
@@ -39,17 +39,21 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
     const token = await tokens.findOne(filter)
 
     let data = !!token?.burned
+    let fetched_data;
 
     if (data) {
       if (token?.burned_tx !== "") {
         return NextResponse.json({ success: true, result: {burned: true, burned_tx: token?.burned_tx} })
       } 
     } else {
-      data = await fetcher(`account/${tAddr}`)
-      console.log(data)
+
+      fetched_data = await fetcher(`account/${tAddr}`)
+      data = parseInt(fetched_data?.tokenInfo?.supply || "1") == 0
     }
   
     if(data){
+
+      
 
       const tx = await txFetcher(`account/transactions?account=${tAddr}&limit=1`)
       console.log(tx)
@@ -71,7 +75,7 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
           return NextResponse.json({ success: false, step: "catch_error", error: error });
         }
   } else {
-    return NextResponse.json({ success: false, error, step: "else", data, result: {burned: false, burned_tx: ""} });
+    return NextResponse.json({ success: false, error, step: "else", fetched_data, result: {burned: false, burned_tx: ""} });
   }
 
   } catch(e) {
