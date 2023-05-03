@@ -20,6 +20,7 @@ import { encode } from 'bs58';
 import SolanaBirds from './solanaBirds';
 import UnchainedBirds from './unchainedBirds';
 import MigratedBirds from './migratedBirds';
+import { useBirdsOfSolis } from '@/providers/birdsOfSolisProvider';
 
 interface linkBody {
   sAddress: string;
@@ -50,6 +51,8 @@ export function MigrationWizard({ children }: PropsWithChildren) {
   const { data: linkData, error, isLoading } = useSWR(publicKey ? `/api/link/${publicKey.toString()}` : null, linkFetcher)
 
   const { address: eAddress, isConnecting: eIsConnecting } = useAccount()
+
+  const { solanaBirds, unchainedBirds, ethereumBirds } = useBirdsOfSolis()
 
   useEffect(()=>{
     console.log(linkData)
@@ -223,12 +226,17 @@ export function MigrationWizard({ children }: PropsWithChildren) {
       {
         step == 4 && (
           <div className="card">
-          <h1>Migrate Your Birds</h1>
-          <h3>(Burn on Solana &rarr; Mint on Ethereum)</h3>
+          
           <div className="flex flex-col align-center justify-around">
-          <div className="flex mt-6 card"><SolanaBirds /></div>
-          <div className="flex mt-6 card"><UnchainedBirds /></div>
-          <div className="flex mt-6 card"><MigratedBirds /></div>
+            {(solanaBirds.length + unchainedBirds.length + ethereumBirds.length) === 0 ? (<>
+            There were no Birds of Solis minted with the connected Solana account.
+            </>) : (<>
+            <h1>Migrate Your Birds</h1>
+            <h3>(Burn on Solana &rarr; Mint on Ethereum)</h3>
+            </>) }
+          {solanaBirds.length > 0 && (<div className="flex mt-6 card"><SolanaBirds /></div>)}
+          {unchainedBirds.length > 0 && (<div className="flex mt-6 card"><UnchainedBirds /></div>)}
+          {ethereumBirds.length > 0 && (<div className="flex mt-6 card"><MigratedBirds /></div>)}
         </div>
           </div>
         )
