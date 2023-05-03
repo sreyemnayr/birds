@@ -19,6 +19,7 @@ import { encode } from 'bs58';
 
 import SolanaBirds from './solanaBirds';
 import UnchainedBirds from './unchainedBirds';
+import MigratedBirds from './migratedBirds';
 
 interface linkBody {
   sAddress: string;
@@ -226,6 +227,7 @@ export function MigrationWizard({ children }: PropsWithChildren) {
           <div className="flex flex-col align-center justify-around">
           <div className="flex mt-6 card"><SolanaBirds /></div>
           <div className="flex mt-6 card"><UnchainedBirds /></div>
+          <div className="flex mt-6 card"><MigratedBirds /></div>
         </div>
           </div>
         )
