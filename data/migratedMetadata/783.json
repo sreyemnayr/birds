@@ -1,0 +1,32 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Pinguinus Impennis Morphis #75",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Spoonbill"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Navi"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Pinguinus"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Lyrid"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Darkening"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Impennis"
+    }
+  ],
+  "image": "ipfs://bafybeiepbbynknfplhzwlupr4n4zjmq7rivpkwpzicy4ptynm4re5udqei"
+}

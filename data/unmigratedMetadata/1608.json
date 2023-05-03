@@ -1,0 +1,40 @@
+{
+  "description": "This bird has yet to migrate to Ethereum from Solana - it was minted by the Solana account F66jR3seoZZ5ixMhg37dkqDb4mpezw5jvt2RUdwC1apk and can be migrated via the interface at https://migrate.birdsofsolis.com . \n\nBirds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://migrate.birdsofsolis.com",
+  "name": "Unmigrated Grus Paradisea Morphea #32",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Cormorant"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Altair"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Grus"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Ceirean"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Mira"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Rosette"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Rushing Fog"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Paradisea"
+    }
+  ],
+  "image": "ipfs://bafybeia7zpihxqdaciososckvxq7ty34igrnqh6ij7ny2qf7t4npj7xgqy/1608.png"
+}

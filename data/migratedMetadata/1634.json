@@ -1,0 +1,40 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Platalea Ajaja Morpha #79",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Spoonbill"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Platalea"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Garniture"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Cecaelia"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Mira"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Balmoral"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Enchanted"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Ajaja"
+    }
+  ],
+  "image": "ipfs://bafybeibz5h67nqaljhc3cya4ffbsrjlp25rawtcbswz7zh6w42tu4xgtoi"
+}

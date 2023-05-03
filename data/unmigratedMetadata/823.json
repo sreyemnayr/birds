@@ -1,0 +1,24 @@
+{
+  "description": "This bird has yet to migrate to Ethereum from Solana - it was minted by the Solana account 865WWndsrAtvPyVzdxxhfBkP3AkiSSUUN6ruiTudCcjM and can be migrated via the interface at https://migrate.birdsofsolis.com . \n\nBirds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://migrate.birdsofsolis.com",
+  "name": "Unmigrated Cepphus Alcidae Morphae #25",
+  "attributes": [
+    {
+      "trait_type": "Genus",
+      "value": "Cepphus"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Mimosa"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Painted Cloud"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Alcidae"
+    }
+  ],
+  "image": "ipfs://bafybeia7zpihxqdaciososckvxq7ty34igrnqh6ij7ny2qf7t4npj7xgqy/823.png"
+}

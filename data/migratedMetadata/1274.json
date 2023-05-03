@@ -1,0 +1,40 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Phoenicopterus Ruber Morpher #39",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Cormorant"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Cygnus"
+    },
+    {
+      "trait_type": "Scolopaceus Courlan",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Phoenicopterus"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Moire Ribbon"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Mimosa"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Solar Flair"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Ruber"
+    }
+  ],
+  "image": "ipfs://bafybeifmjpezyccefzy4ajvof7ry556ncv5aqx3hxgzptghb4w6lcuqbli"
+}

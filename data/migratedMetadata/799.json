@@ -1,0 +1,36 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Fratercula Corniculata Morpha #100",
+  "attributes": [
+    {
+      "trait_type": "Yellow Moth Caterpillar",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Fratercula"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Scylla"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Lyrid"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Black Satin"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Precipice"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Corniculata"
+    }
+  ],
+  "image": "ipfs://bafybeie3kxp5owawzdze7su36bu6z5zxv6oli4nhqzdabhewwy3crkvxoq"
+}

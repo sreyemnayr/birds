@@ -1,0 +1,32 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Cepphus Alcidae Morphae #74",
+  "attributes": [
+    {
+      "trait_type": "Celestial",
+      "value": "Moriah"
+    },
+    {
+      "trait_type": "Green Anole",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Cepphus"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Black Satin"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Rushing Fog"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Alcidae"
+    }
+  ],
+  "image": "ipfs://bafybeibz3eqpsgwrmz7vapcqdb4qegziv5w2x4eiktqis3yidt3w3nueza"
+}

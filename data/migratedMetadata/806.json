@@ -1,0 +1,36 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Hydrobates Furcatus Morphus #4",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Pelican"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Hydrobates"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Scylla"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Lyrid"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Rosette"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Rushing Fog"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Furcatus"
+    }
+  ],
+  "image": "ipfs://bafybeiecgbyaexlrdne5a2rtb3ku7wrwvgum2527the24wnrht22ykjkrm"
+}

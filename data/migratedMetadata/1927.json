@@ -1,0 +1,32 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Grus Americana Morpha #45",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Flamingo"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Sirius"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Grus"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "French Heel"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Tranquil"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Americana"
+    }
+  ],
+  "image": "ipfs://bafybeieglffvxpscpqvgiodbkxo3btlfjmbtzpbav4oy7oep2q6mvcnuva"
+}

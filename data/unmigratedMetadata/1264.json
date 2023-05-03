@@ -1,0 +1,32 @@
+{
+  "description": "This bird has yet to migrate to Ethereum from Solana - it was minted by the Solana account H2pdLiPnNAT8VxcgRMgtiA5SXH3xHtXPUthden6qTQrp and can be migrated via the interface at https://migrate.birdsofsolis.com . \n\nBirds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://migrate.birdsofsolis.com",
+  "name": "Unmigrated Cygnus Buccinator Morphor #73",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Flamingo"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Felis"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Cygnus"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Charybdis"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Jubilee"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Buccinator"
+    }
+  ],
+  "image": "ipfs://bafybeia7zpihxqdaciososckvxq7ty34igrnqh6ij7ny2qf7t4npj7xgqy/1264.png"
+}

@@ -2,7 +2,7 @@
 
 import { WithId, Document } from 'mongodb';
 
-import React, { PropsWithChildren, useContext, useState, useEffect } from 'react'
+import React, { PropsWithChildren, useContext, useState, useEffect, useMemo } from 'react'
 
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 
@@ -61,15 +61,15 @@ const BirdsOfSolisContext = React.createContext<BirdsOfSolisContextType>({solana
 export function BirdsOfSolisProvider({ children }: PropsWithChildren) {
 
   const { connection: sConnection } = useConnection()
-  const { publicKey: sAddress, sendTransaction: sSendTransaction } = useWallet()
+  const { publicKey: sAddress } = useWallet()
 
-  const { address: eAddress, isConnecting: eIsConnecting } = useAccount()
+  const { address: eAddress } = useAccount()
 
   const [solanaBirds, setSolanaBirds] = useState<Bird[]>([])
   const [unchainedBirds, setUnchainedBirds] = useState<Bird[]>([])
   const [ethereumBirds, setEthereumBirds] = useState<Bird[]>([])
 
-  const { data: tokens, mutate: mutateBirds } = useApiBirds(sAddress?.toString() || "")
+  const { data: tokens, mutate: mutateBirds } = useApiBirds(sAddress?.toString())
   // const { tokens } = useRarible(sAddress?.toString() || '')
   // const {nfts: tokens} = useMetaplex()
 
@@ -79,7 +79,6 @@ export function BirdsOfSolisProvider({ children }: PropsWithChildren) {
   }, [sAddress])
 
   useEffect(() => {
-    console.log(tokens)
     if(tokens){
       console.log(tokens)
       setSolanaBirds(tokens?.filter((t:Bird)=>(!t.burned)))

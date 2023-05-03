@@ -1,0 +1,36 @@
+{
+  "description": "This bird has yet to migrate to Ethereum from Solana - it was minted by the Solana account GvRtcm1wUDqnNsPULzEjd4FqW4hLzgat5sAmKPCuL9Fk and can be migrated via the interface at https://migrate.birdsofsolis.com . \n\nBirds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://migrate.birdsofsolis.com",
+  "name": "Unmigrated Grus Americana Morpha #41",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Crane"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Grus"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Gros Grain"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Ceirean"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Black Satin"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Jubilee"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Americana"
+    }
+  ],
+  "image": "ipfs://bafybeia7zpihxqdaciososckvxq7ty34igrnqh6ij7ny2qf7t4npj7xgqy/1765.png"
+}

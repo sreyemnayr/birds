@@ -9,11 +9,9 @@ const fetcher = (key: string) => fetch(key, {
   "method": "GET",
 }).then(res => res.json());
 
-export function useApiBirds(sAddress: string) {
-  console.log("In useApiBirds")
-  console.log(sAddress)
+export function useApiBirds(sAddress: string | undefined) {
   
-  const { data, error, isLoading, mutate } = useSWR(sAddress !== "" ? `/api/birds/${sAddress}` : null, fetcher)
+  const { data, error, isLoading, mutate } = useSWR(sAddress ? `/api/birds/${sAddress}` : null, fetcher)
   if(data?.result){
     console.log("in if data result")
     console.log(data.result)
@@ -25,7 +23,7 @@ export function useApiBirds(sAddress: string) {
     }
   } else {
     return {
-      data: [],
+      data: undefined,
       isLoading,
       isError: error,
       mutate

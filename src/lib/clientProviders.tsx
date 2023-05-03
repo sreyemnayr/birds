@@ -16,11 +16,11 @@ import { clusterApiUrl } from '@solana/web3.js';
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
 import { configureChains, createClient, WagmiConfig } from 'wagmi'
-import { mainnet } from 'wagmi/chains'
+import { mainnet, goerli } from 'wagmi/chains'
 
 import { BirdsOfSolisProvider } from '@/providers/birdsOfSolisProvider';
 
-const chains = [mainnet]
+const chains = [process.env.NEXT_PUBLIC_CHAIN_ID == "5" ? goerli : mainnet]
 const projectId = 'b1ba5105e77cbb67cb588a7ed7c0bbff'
 
 const { provider } = configureChains(chains, [w3mProvider({ projectId })])

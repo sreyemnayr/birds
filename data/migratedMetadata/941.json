@@ -1,0 +1,32 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Corvus Corax Morphax #5",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Heron"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Esis"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Corvus"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Black Satin"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Jubilee"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Corax"
+    }
+  ],
+  "image": "ipfs://bafybeihkvu7folhe2vxa7eibzdqkguxf3ayjlv5pa4jp2nwu4ozjv3izgm"
+}

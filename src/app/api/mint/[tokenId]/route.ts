@@ -3,12 +3,14 @@ import { MongoClient, ServerApiVersion } from 'mongodb';
 
 import { BigNumber, Wallet, utils } from 'ethers';
 
+const chain = process.env.NEXT_PUBLIC_CHAIN_ID || 1
+
 const url = process.env.MONGODB_URL || ""
 
 const privateKey = process.env.SIGNER_PRIVATE_KEY;
 
 // This is not accurate
-const BOS_ADDRESS = "0x7B67E3661942FDA6C1D73bBe99856B6a11CdD2EE"
+const BOS_ADDRESS = process.env.NEXT_PUBLIC_BOS_CONTRACT || "0x2eFa07CaC3395599db83035D196F2A0e7263F766"
 
 if (!privateKey) {
   throw new Error('No SIGNER private key found');
@@ -65,7 +67,7 @@ export async function GET(request: Request, {params}: {params: {tokenId: string}
         const domain = {
           name: 'BIRDS_OF_SOLIS',
           version: '1',
-          chainId: 1,
+          chainId: process.env.NEXT_PUBLIC_CHAIN_ID,
           verifyingContract: BOS_ADDRESS,
         };
 

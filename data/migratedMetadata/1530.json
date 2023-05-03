@@ -1,0 +1,40 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Egretta Thula Morpha #21",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Blue Heron"
+    },
+    {
+      "trait_type": "Celestial",
+      "value": "Auriga"
+    },
+    {
+      "trait_type": "Little Heron",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Egretta"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Passementerie"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Lusca"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Tempest"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Thula"
+    }
+  ],
+  "image": "ipfs://bafybeih5ikduessxwtiygfryp3pkzg4r5gyog4efy6uwim2bro7z7y742i"
+}

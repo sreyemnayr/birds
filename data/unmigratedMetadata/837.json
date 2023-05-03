@@ -1,0 +1,36 @@
+{
+  "description": "This bird has yet to migrate to Ethereum from Solana - it was minted by the Solana account 3XyDLj9JpmvXJTPdeM8kxaYGBwrtDn6HmHGrtJX9S1wc and can be migrated via the interface at https://migrate.birdsofsolis.com . \n\nBirds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://migrate.birdsofsolis.com",
+  "name": "Unmigrated Platalea Ajaja Morpha #2",
+  "attributes": [
+    {
+      "trait_type": "Beak",
+      "value": "Heron"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Platalea"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Crown"
+    },
+    {
+      "trait_type": "Oceanic",
+      "value": "Lusca"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Balmoral"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Deep Ocean"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Ajaja"
+    }
+  ],
+  "image": "ipfs://bafybeia7zpihxqdaciososckvxq7ty34igrnqh6ij7ny2qf7t4npj7xgqy/837.png"
+}

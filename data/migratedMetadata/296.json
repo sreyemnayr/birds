@@ -1,0 +1,40 @@
+{
+  "description": "Birds of Sōlis is a collaboration between acclaimed illustrator, Varvara Alay, and Snowcrash – a novel NFT platform that is empowering creatives to access the untapped potential of NFTs. This collection celebrates the beauty and magic of some of the world’s most beloved birds as Varvara reimagines the historical illustrations of Audubon’s Birds of America.",
+  "external_url": "https://birdsofsolis.com",
+  "name": "Fratercula Cirrhata Morpha #36",
+  "attributes": [
+    {
+      "trait_type": "Celestial",
+      "value": "Polaris"
+    },
+    {
+      "trait_type": "Little Heron",
+      "value": "Companion"
+    },
+    {
+      "trait_type": "Genus",
+      "value": "Fratercula"
+    },
+    {
+      "trait_type": "Head Piece",
+      "value": "Lappet"
+    },
+    {
+      "trait_type": "Planetae",
+      "value": "Petra"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Winged Stiletto"
+    },
+    {
+      "trait_type": "Sky",
+      "value": "Rushing Fog"
+    },
+    {
+      "trait_type": "Species",
+      "value": "Cirrhata"
+    }
+  ],
+  "image": "ipfs://bafybeignnspuctcnmksfouqybmm5igep5s5syxywuehrmrqdgnmkr5t4hm"
+}
