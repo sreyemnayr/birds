@@ -20,6 +20,7 @@ const txFetcher = (key: string) => fetch(`https://public-api.solscan.io/${key}`,
 }).then(res => res.json()).then(j => j?.[0]?.txHash);
 
 export async function GET(request: Request, {params}: {params: {tAddr: string}}) {
+  let error;
 
   console.log(params)
 
@@ -72,10 +73,11 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
   }
 
   } catch(e) {
+    error = e
     console.log(e)
     console.log(process.env.SOLSCAN_TOKEN)
   }
 
-  return NextResponse.json({ success: false, result: {burned: false, burned_tx: ""} });
+  return NextResponse.json({ success: false, error, result: {burned: false, burned_tx: ""} });
 
 }
