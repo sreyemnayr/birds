@@ -45,6 +45,7 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
       } 
     } else {
       data = await fetcher(`account/${tAddr}`)
+      console.log(data)
     }
   
     if(data){

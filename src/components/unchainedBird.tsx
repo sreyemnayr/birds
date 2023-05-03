@@ -49,7 +49,7 @@ export const UnchainedBird = ({bird}: IUnchainedBird) => {
       setHasSignature(true)
     })
        
-  }, [])
+  }, [bird.token_id])
 
 
   return(
