@@ -70,6 +70,8 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
           console.log(error);
           return NextResponse.json({ success: false, step: "catch_error", error: error });
         }
+  } else {
+    return NextResponse.json({ success: false, error, step: "else", data, result: {burned: false, burned_tx: ""} });
   }
 
   } catch(e) {
