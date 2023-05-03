@@ -17,7 +17,7 @@ export const MigratedBird = ({bird}: IMigratedBird) => {
             <div className="text-xs">{bird.name}</div>
             <a 
               className="absolute inline-flex items-center justify-center p-2 text-xs font-bold text-white bg-blue-400 hover:bg-cyan-400 border-2 border-white rounded-lg -bottom-2 -right-2 dark:border-gray-900"
-              href={`https://https://opensea.io/assets/ethereum/0x48d8a13b3e499c98db1566ea41aee212642ea182/${bird.token_id}`}
+              href={`https://opensea.io/assets/ethereum/0x48d8a13b3e499c98db1566ea41aee212642ea182/${bird.token_id}`}
               target="_blank"
               >view on opensea</a>
               <a 
