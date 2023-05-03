@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { MongoClient, ServerApiVersion } from 'mongodb';
+import clientPromise from "@/lib/mongoClient"
 
 import { BigNumber, Wallet, utils } from 'ethers';
 
@@ -32,15 +32,8 @@ export async function GET(request: Request, {params}: {params: {tokenId: string}
   const tokenId = params.tokenId
 
   try {
-    const client = new MongoClient(url, {
-        serverApi: {
-          version: ServerApiVersion.v1,
-          strict: true,
-          deprecationErrors: true,
-        }
-      });
+    const client = await clientPromise
     
-      await client.connect();
       const db = client.db("birds")
       const owners = db.collection("owners")
       const tokens = db.collection("tokens")
@@ -55,9 +48,6 @@ export async function GET(request: Request, {params}: {params: {tokenId: string}
 
       if (token?.burned){
         const owner = await owners.findOne({sAddress: token?.owner})
-
-        await client.close();
-
 
         const message = {
           wallet: owner?.eAddress,

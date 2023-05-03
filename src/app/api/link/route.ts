@@ -2,8 +2,7 @@ import { PublicKey } from "@solana/web3.js";
 import { NextResponse } from "next/server";
 import { sign } from 'tweetnacl';
 import { encode, decode } from 'bs58';
-import { MongoClient, ServerApiVersion } from 'mongodb';
-
+import clientPromise from "@/lib/mongoClient"
 /*
 interface ExtendedNextApiRequest extends NextApiRequest {
   body: {
@@ -34,15 +33,7 @@ export async function POST(request: Request) {
     } else {
       console.log("Signature verified")
       // log to database
-      const client = new MongoClient(url, {
-        serverApi: {
-          version: ServerApiVersion.v1,
-          strict: true,
-          deprecationErrors: true,
-        }
-      });
-
-      await client.connect();
+      const client = await clientPromise
       const db = client.db("birds")
       const owners = db.collection("owners")
 
@@ -63,8 +54,6 @@ export async function POST(request: Request) {
       }
 
       const result = await owners.updateOne(filter, update, options);
-
-      await client.close();
 
 
 

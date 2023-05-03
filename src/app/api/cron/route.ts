@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { MongoClient, ServerApiVersion } from 'mongodb';
+import clientPromise from "@/lib/mongoClient"
 
 
 const url = process.env.MONGODB_URL || ""
@@ -7,15 +7,8 @@ const url = process.env.MONGODB_URL || ""
 export async function GET() {
 
     try {
-        const client = new MongoClient(url, {
-            serverApi: {
-              version: ServerApiVersion.v1,
-              strict: true,
-              deprecationErrors: true,
-            }
-          });
+        const client = await clientPromise
         
-          await client.connect();
           const db = client.db("birds")
           const tokens = db.collection("tokens")
     
@@ -31,8 +24,6 @@ export async function GET() {
                 await tokens.updateOne({token_id: parseInt(tx.tokenID)}, {$set: {minted: true, mint_tx: tx.hash, mint_block: parseInt(tx.blockNumber)}})
             }
           }
-
-          await client.close();
 
           return NextResponse.json({success: true})
     

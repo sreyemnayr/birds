@@ -1,15 +1,6 @@
 import { NextResponse } from "next/server";
-import { MongoClient, ServerApiVersion } from 'mongodb';
+import clientPromise from "@/lib/mongoClient"
 
-/*
-interface ExtendedNextApiRequest extends NextApiRequest {
-  body: {
-    sAddress: string;
-    eAddress: string;
-    signature: string;
-  };
-}
-*/
 
 interface ExtendedRequest extends Request {
   params: {
@@ -26,15 +17,8 @@ export async function GET(request: Request, {params}: {params: {sAddr: string}})
   const sAddress = params.sAddr
 
   try {
-    const client = new MongoClient(url, {
-        serverApi: {
-          version: ServerApiVersion.v1,
-          strict: true,
-          deprecationErrors: true,
-        }
-      });
+    const client = await clientPromise
     
-      await client.connect();
       const db = client.db("birds")
       const tokens = db.collection("tokens")
 
@@ -43,8 +27,6 @@ export async function GET(request: Request, {params}: {params: {sAddr: string}})
       }
 
       const result = await tokens.find(filter).toArray()
-
-      await client.close();
 
       return NextResponse.json({ success: true, result })
       
