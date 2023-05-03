@@ -8,6 +8,7 @@ const fetcher = (key: string) => fetch(`https://public-api.solscan.io/${key}`, {
     "accept": "*/*",
     "token": process.env.SOLSCAN_TOKEN || "",
   },
+  next: { revalidate: 5 },
   "method": "GET",
 }).then(res => res.json());
 
@@ -16,6 +17,7 @@ const txFetcher = (key: string) => fetch(`https://public-api.solscan.io/${key}`,
     "accept": "*/*",
     "token": process.env.SOLSCAN_TOKEN || "",
   },
+  next: { revalidate: 5 },
   "method": "GET",
 }).then(res => res.json()).then(j => j?.[0]?.txHash);
 
