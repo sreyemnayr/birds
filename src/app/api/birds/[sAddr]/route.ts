@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import clientPromise from "@/lib/mongoClient"
 
+import { GET as cronGET } from "@/app/api/cron/route"
+
 
 interface ExtendedRequest extends Request {
   params: {
@@ -15,6 +17,8 @@ export async function GET(request: Request, {params}: {params: {sAddr: string}})
   console.log(params)
   
   const sAddress = params.sAddr
+
+  await cronGET()
 
   try {
     const client = await clientPromise

@@ -7,6 +7,7 @@ const fetcher = (key: string) => fetch(key, {
     "accept": "*/*",
     "token": process.env.SOLSCAN_TOKEN || "",
   },
+  next: {revalidate: 5},
   "method": "GET",
 }).then(res => res.json());
 

@@ -7,6 +7,7 @@ const fetcher = (key: string) => fetch(key, {
     "accept": "*/*",
   },
   "method": "GET",
+  next: {revalidate: 5},
 }).then(res => res.json());
 
 export function useApiBirds(sAddress: string | undefined) {

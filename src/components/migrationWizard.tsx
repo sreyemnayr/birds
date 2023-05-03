@@ -33,10 +33,11 @@ const fetcher = (body: linkBody) => fetch(`/api/link`, {
     "accept": "*/*",
   },
   "body": JSON.stringify(body),
+  next: {revalidate: 5},
   "method": "POST",
 }).then(res => res.json());
 
-const linkFetcher = (key: string) => fetch(key).then(res => res.json());
+const linkFetcher = (key: string) => fetch(key,{next: {revalidate: 5},}).then(res => res.json());
 
 
 export function MigrationWizard({ children }: PropsWithChildren) {

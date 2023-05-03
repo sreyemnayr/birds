@@ -29,7 +29,7 @@ export const SolanaBird = ({bird}: ISolanaBird) => {
 
   const checkBurned = async(nft: string, watch = false) => {
     
-    const res = await fetch(`/api/burned/${nft}`).then(r=>r.json())
+    const res = await fetch(`/api/burned/${nft}`, {next: {revalidate: 5}}).then(r=>r.json())
     if (res?.result?.burned){
       SetStatus('BURNED')
       mutateBirds?.()

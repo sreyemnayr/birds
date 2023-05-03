@@ -3,16 +3,16 @@ import {useState, useEffect} from 'react'
 
 import { contract } from '@/data/contract'
 
-import { useAccount, usePrepareContractWrite, useContractWrite } from 'wagmi'
+import { useAccount, usePrepareContractWrite, useContractWrite, useWaitForTransaction } from 'wagmi'
 
 
-import { Bird } from '@/providers/birdsOfSolisProvider'
+import { Bird, useBirdsOfSolis } from '@/providers/birdsOfSolisProvider'
 
 interface IUnchainedBird {
   bird: Bird
 }
 
-const fetcher = async (tokenId: number) => fetch(`/api/mint/${tokenId}`).then((r)=>r.json())
+const fetcher = async (tokenId: number) => fetch(`/api/mint/${tokenId}`, {next: {revalidate: 5}}).then((r)=>r.json())
 
 export const UnchainedBird = ({bird}: IUnchainedBird) => {
 
@@ -25,6 +25,8 @@ export const UnchainedBird = ({bird}: IUnchainedBird) => {
   const [ mintSignature, setMintSignature ] = useState('')
   const [ mintWallet, setMintWallet ] = useState('' as `0x${string}`)
 
+  const { mutateBirds } = useBirdsOfSolis() 
+
   const {
     config,
     error: prepareError,
@@ -33,7 +35,10 @@ export const UnchainedBird = ({bird}: IUnchainedBird) => {
     ...contract,
     functionName: 'freeBird',
     args: [mintWallet, bird.token_id, mintSignature],
-    enabled: hasSignature && mintSignature !== '' && mintWallet !== '0x'
+    enabled: hasSignature && mintSignature !== '' && mintWallet !== '0x',
+    onError: ()=>{
+      mutateBirds?.()
+    }
   })
   const { data, error, isError, write } = useContractWrite(config)
 
@@ -51,6 +56,13 @@ export const UnchainedBird = ({bird}: IUnchainedBird) => {
        
   }, [bird.token_id])
 
+  const { data: txData, isError: txError, isLoading: txLoading, isSuccess: txSuccess } = useWaitForTransaction({
+    hash: data?.hash,
+    onSuccess: ()=>{
+      setTimeout(()=>mutateBirds?.(), 5000)
+    }
+  })
+
 
   return(
     
@@ -64,7 +76,7 @@ export const UnchainedBird = ({bird}: IUnchainedBird) => {
               onClick={()=>{
                 write?.()}
               } 
-              >{ hasSignature ? "MIGRATE" : "PREPARING" } #{bird.token_id}</button>
+              >{ txError ? "ERROR" : txSuccess ? "MIGRATED" : txLoading ? "MIGRATING" : hasSignature ? "MIGRATE" : "PREPARING" } #{bird.token_id}</button>
       </div>
     
   )
