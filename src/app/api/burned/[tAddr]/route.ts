@@ -68,7 +68,7 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
           
         } catch (error) {
           console.log(error);
-          return NextResponse.json({ success: false, error: error });
+          return NextResponse.json({ success: false, step: "catch_error", error: error });
         }
   }
 
@@ -76,9 +76,9 @@ export async function GET(request: Request, {params}: {params: {tAddr: string}})
     error = e
     console.log(e)
     console.log(process.env.SOLSCAN_TOKEN)
-    return NextResponse.json({ success: false, error:e, result: {burned: false, burned_tx: ""} });
+    return NextResponse.json({ success: false, error:e, step: "catch_e", result: {burned: false, burned_tx: ""} });
   }
 
-  return NextResponse.json({ success: false, error, result: {burned: false, burned_tx: ""} });
+  return NextResponse.json({ success: false, error, step: "last", result: {burned: false, burned_tx: ""} });
 
 }
