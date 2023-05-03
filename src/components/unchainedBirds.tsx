@@ -16,8 +16,8 @@ export default function UnchainedBirds() {
   
   return (
     <>
-      <h3>{unchainedBirds.length} Unchained Birds:</h3>
-        
+      <h3>{unchainedBirds.length} Unchained Birds{unchainedBirds.length > 0 ? ":" : ""}</h3>
+      {unchainedBirds.length > 0 && (
         <div className='flex flex-wrap'>
          {
           
@@ -28,6 +28,7 @@ export default function UnchainedBirds() {
           ))
         }
         </div>
+      )}
     </>
   )
 }

@@ -19,8 +19,8 @@ export default function SolanaBirds() {
   
   return (
     <>
-      <h3>{solanaBirds.length} Birds on Solana:</h3>
-        
+      <h3>{solanaBirds.length} Birds on Solana{solanaBirds.length > 0 ? ":" : ""}</h3>
+        {solanaBirds.length > 0 && (
         <div className='flex flex-wrap'>
          {
           
@@ -31,6 +31,7 @@ export default function SolanaBirds() {
           ))
         }
         </div>
+        )}
     </>
   )
 }

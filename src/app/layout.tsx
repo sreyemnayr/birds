@@ -1,9 +1,12 @@
 
 import { ClientProviders } from '@/lib/clientProviders'
 
+import { EB_Garamond } from 'next/font/google'
+
 require('@solana/wallet-adapter-react-ui/styles.css')
 require('./globals.css')
 
+const garamond = EB_Garamond({subsets: ['latin']})
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${garamond.className} leading-loose`}>
         <ClientProviders>
           {children}
         </ClientProviders>

@@ -45,7 +45,9 @@ export interface Bird extends WithId<Document>{
   "burned": boolean,
   "burned_tx": string,
   "minted": boolean,
-  "minted_tx": string,
+  "minted_tx"?: string,
+  "mint_tx"?: string,
+  "mint_block"?: string,
   "thumbnail": string
 }
 
