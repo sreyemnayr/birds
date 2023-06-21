@@ -234,9 +234,9 @@ export function MigrationWizard({ children }: PropsWithChildren) {
             <h1>Migrate Your Birds</h1>
             <h3>(Burn on Solana &rarr; Mint on Ethereum)</h3>
             <p>This process takes a little time, so please be patient.</p>
-            <p>First, for each of your Solana Birds below, choose "Burn" and sign the transaction with your Solana wallet.</p>
-            <p>Next, when the birds appear in the "Unchained Birds" section, choose "Migrate" and sign the transactions with your Etherum wallet.</p>
-            <p>After the migration has completed, your Birds of Solis should appear in the "Migrated Birds" section with links to OpenSea and Etherscan.</p>
+            <p>First, for each of your Solana Birds below, choose &ldquo;Burn&rdquo; and sign the transaction with your Solana wallet.</p>
+            <p>Next, when the birds appear in the &ldquo;Unchained Birds&rdquo; section, choose &ldquo;Migrate&rdquo; and sign the transactions with your Etherum wallet.</p>
+            <p>After the migration has completed, your Birds of Solis should appear in the &ldquo;Migrated Birds&rdquo; section with links to OpenSea and Etherscan.</p>
             <p>If any step seems to have taken longer than a few minutes, try refreshing the browser.</p>
             </>) }
           {solanaBirds.length > 0 && (<div className="flex mt-6 card"><SolanaBirds /></div>)}
