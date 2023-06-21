@@ -19,9 +19,9 @@ export default function SolanaBirds() {
   
   return (
     <>
-      <h3>{solanaBirds.length} Birds on Solana{solanaBirds.length > 0 ? ":" : ""}</h3>
+      <h1>{solanaBirds.length} Bird{solanaBirds.length > 1 ? 's' : ''} on Solana{solanaBirds.length > 0 ? ":" : ""}</h1>
         {solanaBirds.length > 0 && (
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap justify-center'>
          {
           
           solanaBirds?.map((sb) => (

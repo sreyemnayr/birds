@@ -16,9 +16,9 @@ export default function UnchainedBirds() {
   
   return (
     <>
-      <h3>{unchainedBirds.length} Unchained Birds{unchainedBirds.length > 0 ? ":" : ""}</h3>
+      <h1>{unchainedBirds.length} Unchained Bird{unchainedBirds.length > 1 ? "s" : ""}{unchainedBirds.length > 0 ? ":" : ""}</h1>
       {unchainedBirds.length > 0 && (
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap justify-center'>
          {
           
           unchainedBirds?.map((sb) => (

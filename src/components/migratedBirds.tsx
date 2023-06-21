@@ -11,9 +11,9 @@ export default function MigratedBirds() {
 
   return (
     <>
-      <h3>{ethereumBirds.length} Migrated Birds:</h3>
+      <h1>{ethereumBirds.length} Migrated Bird{ethereumBirds.length > 1 ? 's' : ''}:</h1>
 
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap justify-center'>
         {
           ethereumBirds?.map((sb) => (
             <div key={`div${sb._id}`} >

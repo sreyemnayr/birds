@@ -17,7 +17,7 @@
 
 @layer components {
   .card {
-    background-color: theme('colors.slate.50');
+    
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
     margin: theme('spacing.2');
@@ -25,22 +25,40 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: theme('colors.zinc.700')
+    color: rgb(var(--foreground-rgb))
+  }
+
+  .card .card {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-start-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  }
+
+  .card .card .card {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-end-rgb));
   }
   
 }
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 248, 244, 229;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 16, 18, 14;
+    --background-end-rgb: 6, 8, 4;
   }
 }
 
@@ -51,7 +69,7 @@ body {
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-end-rgb));
 }
 
 .wallet-adapter-button-trigger {
